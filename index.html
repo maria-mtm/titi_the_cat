@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <title>Titi The Cat</title>
+
+</head>
+
+<body>
+    <div class="firstDivider"></div>
+    <!-- TITULO -->
+    <div class="tittleBox">
+        <h2 class="tittleh2">Welcome to</h2>
+        <h1 class="tittleh1">Titi The Cat's Website</h1>
+    </div>
+
+    <div class="regularDivider"></div>
+   
+
+    <!-- ACORDEON -->
+    <div class="acordeon">
+        <!-- .bloque*2>h2{Titular}+p.contenido{Soy el contenido $} -->
+        <div class="bloque">
+            <h3 class="h3">Name</h3>
+            <p class="contenido">Tormenta del Carmen</p>
+        </div>
+        <div class="bloque">
+            <h3 class="h3">Date of Birth</h3>
+            <p class="contenido">01/06/2015</p>
+        </div>
+        <div class="bloque activo">
+            <h3 class="h3">Breed</h3>
+            <p class="contenido">European shorthair</p>
+        </div>
+        <div class="bloque">
+            <h3 class="h3">Color</h3>
+            <p class="contenido">Striped/White</p>
+        </div>
+    </div>
+
+
+    <div class="regularDivider"></div>
+    <!-- Lightbox -->
+
+
+    <!-- ul.ul>li.li*3>a.a[href="#"title="imagen $"]>img.img[src="#" alt="imagen $"] -->
+    <ul class="ul">
+        <li class="li">
+            <a href="#" class="a" title="imagen 1">
+                <img src="/assets/img4.jpeg" alt="imagen 1" class="img" loading="lazy">
+                <!-- loading:lazy carga las imagenes cuando se vayan a ver, no antes OPTIMIZACION -->
+            </a>
+        </li>
+        <li class="li">
+            <a href="#" class="a" title="imagen 2">
+                <img src="/assets/img7.jpeg" alt="imagen 2" class="img" loading="lazy">
+            </a>
+        </li>
+        <li class="li">
+            <a href="#" class="a" title="imagen 3">
+                <img src="/assets/img8.jpeg" alt="imagen 3" class="img" loading="lazy">
+            </a>
+        </li>
+    </ul>
+    <!-- .lightbox>button.cerrar{Cerrar}+img.grande -->
+    <div class="lightbox">
+        <button class="cerrar">Cerrar</button>
+        <img src="/assets/img4.jpeg" alt="imagen 1" class="grande" loading="lazy">
+        <!-- aunque el src luego vaya a cambiar con el js, siempre poner una imagen OPTIMIZACION -->
+    </div>
+    <div class="regularDivider"></div>
+
+
+    <!-- carrousel -->
+    <div class="carrousel">
+        <div class="ggrande">
+            <img src="/assets/toy1.jpeg" alt="toy1" class="img">
+            <img src="/assets/toy2.jpeg" alt="toy2" class="img">
+        </div>
+
+        <ul class="puntos">
+            <li class="punto"></li>
+            <li class="punto"></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="lastDivider"></div>
+
+
+
+    <!-- JS Main -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
