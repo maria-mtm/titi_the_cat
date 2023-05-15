@@ -3,7 +3,7 @@
     /* --- Colors --- */
     --white: #f7f2de;
     --whiteish: #dbd9d2;
-    --coral: rgb(252, 144, 105);
+    --coral: #fc9069;
     --blue: rgb(120, 187, 210);
     --red: rgb(255, 80, 45);
     --pink: rgb(255, 192, 252);
@@ -82,6 +82,11 @@
 
     align-self: center;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .header_menu {
@@ -90,7 +95,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     gap: 10px;
@@ -104,7 +109,11 @@
     font-family: var(--font2);
     text-decoration: none;
 
+}
 
+.hmenu_link a:hover{
+    color: var(--coral);
+    transition: 0.3s;;
 }
 
 /* BODY */
@@ -412,6 +421,8 @@ body {
     border-radius: 100%;
     margin: 1em 1em 0;
     box-shadow: 1px 1px 6px var(--black);
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .carrousel .punto.active {
