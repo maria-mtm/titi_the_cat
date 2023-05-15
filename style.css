@@ -10,6 +10,7 @@
     /* Background Colors */
     --background: #bb88e6;
     --black: rgba(22, 22, 22, 0.719);
+    --header: rgba(0, 0, 0, 0.253);
 
 
     /* Typography */
@@ -34,31 +35,79 @@
     font-weight: 700;
     font-size: 60px;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-   text-shadow: 1px 1px 10px var(--black);;
+    text-shadow: 1px 1px 10px var(--black);
+    
 }
 
 .tittleh2 {
     font-weight: 500;
     font-size: 40px;
-    text-shadow: 1px 1px 10px var(--black);;
+    text-shadow: 1px 1px 10px var(--black);
+    
+}
+
+.tittleh3 {
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px var(--black);
+    
 }
 
 
 /* dividers */
 
-.firstDivider{
+.firstDivider {
     height: 100px;
 }
 
-.regularDivider{
+.regularDivider {
     height: 300px;
 }
 
-.lastDivider{
+.lastDivider {
     height: 600px;
 }
 
 /* ----- */
+/* HEADER */
+#header {
+    width: 100%;
+    height: 35px;
+    background-color: var(--header);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    align-self: center;
+
+}
+
+.header_menu {
+    width: 80%;
+    border: 2px yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    list-style-type: none;
+
+}
+
+.hmenu_link a {
+    color: var(--white);
+    font-family: var(--font2);
+    text-decoration: none;
+
+
+}
+
+/* BODY */
 
 body {
     background-color: var(--background);
@@ -80,19 +129,24 @@ body {
     box-shadow: inset 1px 1px 10px var(--black);
 
     /* margin: 20em; */
-
+    margin-top: 35px;
     color: var(--white);
     font-family: var(--font2);
 }
 
 /* ACORDEON */
+.minitittlebox{
+    color:var(--white);
+    font-family: var(--font2);
+}
 
 .acordeon {
     width: 30%;
     max-width: 80em;
     /* este max width es para que en pantallas grandes tenga un limite */
     padding: 4em;
-    margin: 10% auto; /* Vertical | Horizontal */
+    margin: 2% auto;
+    /* Vertical | Horizontal */
 
 
     /* borders */
@@ -105,8 +159,9 @@ body {
 }
 
 .acordeon .bloque {
-  
-    margin: 0 0 2em; /* Arriba | Horizontal | Abajo */
+
+    margin: 0 0 2em;
+    /* Arriba | Horizontal | Abajo */
     padding: 1em;
 
     border-radius: 10px;
@@ -114,12 +169,13 @@ body {
     background-color: var(--background);
 
     text-align: center;
-    
-   
+
+
 }
 
 .acordeon .h3 {
-    margin: 0 0 0.5em; /* Arriba | Horizontal | Abajo */
+    margin: 0 0 0.5em;
+    /* Arriba | Horizontal | Abajo */
     padding: 1em;
 
     border-radius: 10px;
@@ -127,7 +183,7 @@ body {
     cursor: pointer;
 }
 
-.acordeon .h3:hover{
+.acordeon .h3:hover {
 
     border-radius: 10px;
     border: 2px solid var(--black);
@@ -142,14 +198,15 @@ body {
 
     height: 0;
     padding: 0em;
-    overflow: hidden; /* para ocultar esta etiqueta de contenido */
+    overflow: hidden;
+    /* para ocultar esta etiqueta de contenido */
 
     transition: all .5s ease;
 
     cursor: pointer;
 }
 
-.acordeon .contenido:hover{
+.acordeon .contenido:hover {
     color: var(--white)
 }
 
@@ -165,26 +222,28 @@ body {
 
 /* LIGHTBOX */
 /* cuadro de imagenes del lightbox */
-.ul{
-  width: 80%;
-  background-color: var(--blue);
+.ul {
+    width: 80%;
+    background-color: var(--blue);
 
-  padding:4em;
+    padding: 4em;
+    margin: 2% auto;
 
-  border-radius: 10px;
-  box-shadow: inset 1px 1px 10px var(--black);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 10px var(--black);
 
-  display:grid;
-  /* grid-template-columns: repeat(3,1fr); */
-  /* con responsive: */
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* con responsive: */
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 
-  gap: 1em;
+    gap: 1em;
+
 }
 
-.ul .li{
-    
-    width:20vw;
+.ul .li {
+
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,29 +252,30 @@ body {
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--black);
 
-    overflow:hidden
+    overflow: hidden
 }
 
-.ul .li:hover .img{
+.ul .li:hover .img {
     transform: scale(1.1);
 }
+
 /* 
 .ul .a{
     
 } */
 
-.ul .img{
-   width: 100%;
-  
+.ul .img {
+    width: 100%;
 
-  transition:all .5s ease;
-  transform: scale(1.4);
+
+    transition: all .5s ease;
+    transform: scale(1.4);
 }
 
 /* El propio lightbox */
 
-.lightbox{
-    position:fixed;
+.lightbox {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -223,13 +283,16 @@ body {
     background-color: var(--blue);
     z-index: 2;
 
+   
+
     /* en vez de display: none; */
     opacity: 0;
     transform: scale (1.1);
-    transition: all .5s ease ;
-    pointer-events:none;  /* el usuario no puede hacer click */
-   
-    
+    transition: all .5s ease;
+    pointer-events: none;
+    /* el usuario no puede hacer click */
+
+
 }
 
 .lightbox.active {
@@ -240,39 +303,42 @@ body {
 
     opacity: 1;
     transform: scale (1);
-    pointer-events:auto;  /* el usuario vuelve a poder hacer click */
+    pointer-events: auto;
+    /* el usuario vuelve a poder hacer click */
 }
 
 
-.lightbox .cerrar{
+.lightbox .cerrar {
     width: 4em;
     height: 4em;
     background-color: var(--blue);
     font-family: var(--font2);
-    
+
 
     box-shadow: 1px 1px 5px var(--black);
     border-radius: 5px;
-    border:none;
+    border: none;
 
     padding: 5px;
 
-    margin: 0 0 1em;  /* margin dolo abajo */
+    margin: 0 0 1em;
+    /* margin dolo abajo */
 
-    cursor:  pointer;
+    cursor: pointer;
 
     /* transition: 0.5s */
 
 }
 
-.lightbox .cerrar:hover{
-    box-shadow:inset 1px 1px 5px var(--black);
+.lightbox .cerrar:hover {
+    box-shadow: inset 1px 1px 5px var(--black);
     transition: 0.2s;
     color: var(--white);
     background-color: var(--red);
 
 }
-.lightbox .grande{
+
+.lightbox .grande {
     width: 380px;
     height: 80vh;
     background-color: var(--whiteish);
@@ -285,11 +351,13 @@ body {
 
 /* carrousel */
 
-.carrousel{
-    width:40%;
+.carrousel {
+    width: 40%;
     max-width: 120em;
     background-color: var(--pink);
-   
+
+    margin: 2% auto;
+
     border-radius: 10px;
     box-shadow: inset 1px 1px 10px var(--black);
     padding: 2em;
@@ -297,12 +365,13 @@ body {
     overflow: hidden;
 }
 
-.carrousel .ggrande{
-    width:200%; /* el doble del de arriba */
+.carrousel .ggrande {
+    width: 200%;
+    /* el doble del de arriba */
     /* background-color: skyblue; */
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 
     padding: 2em;
@@ -311,24 +380,25 @@ body {
     transform: translateX(0%)
 }
 
-.carrousel .img{
-    width: calc(100% / -2em);  /* porque son 2 imagenes las que hay ahi */
+.carrousel .img {
+    width: calc(100% / -2em);
+    /* porque son 2 imagenes las que hay ahi */
     height: 40vh;
     /* background-color: lime; */
     border-radius: 10px;
     box-shadow: 1px 1px 6px var(--black);
     /* padding: 2em; */
 
-    
+
 }
 
-.carrousel .puntos{
+.carrousel .puntos {
     width: 100%;
-    
+
     padding: 0.4em;
     margin: 1em 0 0;
 
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -344,6 +414,6 @@ body {
     box-shadow: 1px 1px 6px var(--black);
 }
 
-.carrousel .punto.active{
+.carrousel .punto.active {
     background-color: orange;
 }
