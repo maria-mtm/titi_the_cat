@@ -441,9 +441,17 @@
 
 
 
+
+
+
+
+
+
+
+
 /* ecommerce titis shop */
 
-.shop_body {
+.shop_body, .cart_body {
     background-color: var(--background);
     /* box-shadow: 1px 1px 10px var(--black); */
 }
