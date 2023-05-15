@@ -4,13 +4,14 @@
     --white: #f7f2de;
     --whiteish: #dbd9d2;
     --coral: #fc9069;
-    --blue: rgb(120, 187, 210);
-    --red: rgb(255, 80, 45);
-    --pink: rgb(255, 192, 252);
+    --blue: #78bbd2;
+    --red: #ff502d;
+    --pink: #ffc0fc;
+    --yellow: #ffe601;
     /* Background Colors */
     --background: #bb88e6;
-    --black: rgba(22, 22, 22, 0.719);
-    --header: rgba(0, 0, 0, 0.253);
+    --black: #161616b7;
+    --header: #00000041;
 
 
     /* Typography */
@@ -127,7 +128,7 @@
 
 /* BODY */
 
-body {
+.index_body {
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -436,4 +437,13 @@ body {
 
 .carrousel .punto.active {
     background-color: orange;
+}
+
+
+
+/* ecommerce titis shop */
+
+.shop_body {
+    background-color: var(--background);
+    /* box-shadow: 1px 1px 10px var(--black); */
 }
