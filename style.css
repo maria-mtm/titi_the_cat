@@ -116,6 +116,15 @@
     transition: 0.3s;;
 }
 
+
+.hmenu_link img {
+    
+    width: 25px;
+    margin-right: 3em;
+    text-decoration: none;
+
+}
+
 /* BODY */
 
 body {
