@@ -467,6 +467,7 @@
 
 .ecommerce aside {
     padding: 2rem;
+    padding-right: 0;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -481,6 +482,44 @@
 .shop_header .shop_logo {
     width: 100px
 }
+
+.shop_menu{
+    list-style-type: none;
+
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+
+}
+.shop_menu .shop_menu_btn{
+    background-color: transparent;
+    border:0;
+    list-style-type: none;
+    color: var(--white);
+    /* font-size: 1rem; */
+    cursor:pointer;
+    font-weight: 600;
+    padding:.7rem;
+
+}
+
+.shop_menu .shop_menu_btn.active{
+    background-color: var(--coral);
+    color: var(--white);
+    width:80%;
+   
+     border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--black);
+    
+}
+
+.shop_menu .cart_btn{
+    margin-top: 2rem;
+}
+
+
+
+
 
 .copyright{
     color: var(--whiteish);
@@ -556,7 +595,7 @@
 
 .shop_items_container .shop_item .shop_item_info .shop_item_btn:hover{
     background-color: var(--coral);
-    transform: 0.5s;
+    transition: background-color 0.2s, color 0.2s;
 
 }
 
