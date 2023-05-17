@@ -69,3 +69,13 @@
 }
 
 /* ----- */
+
+
+.cal_body{
+    background-color: var(--background);
+    background-image: url(../assets/titi_solo.png);
+    background-repeat:space;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 200px;
+}
