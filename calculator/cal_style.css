@@ -1,0 +1,71 @@
+/*  Global Variables  */
+:root {
+    /* --- Colors --- */
+    --white: #f7f2de;
+    --whiteish: #dbd9d2;
+    --coral: #fc9069;
+    --blue: rgb(120, 187, 210);
+    --red: rgb(255, 80, 45);
+    --pink: rgb(255, 192, 252);
+    /* Background Colors */
+    --background: #bb88e6;
+    --black: rgba(22, 22, 22, 0.719);
+    --header: rgba(0, 0, 0, 0.253);
+
+
+    /* Typography */
+    --font1: 'Yomogi', cursive;
+    --font2: 'Quicksand', sans-serif;
+}
+
+/* CSS reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* FONTS */
+
+
+
+.tittleh1 {
+    font-weight: 700;
+    font-size: 60px;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    text-shadow: 1px 1px 10px var(--black);
+    
+}
+
+.tittleh2 {
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px var(--black);
+    
+}
+
+.tittleh3 {
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px var(--black);
+    
+}
+
+
+/* dividers */
+
+.firstDivider {
+    height: 100px;
+}
+
+.regularDivider {
+    height: 300px;
+}
+
+.lastDivider {
+    height: 600px;
+}
+
+/* ----- */
