@@ -16,8 +16,15 @@
     <!-- tab icon -->
     <link rel="icon" href="../assets/icons/gatoo_c.png">
 
+    <!-- Models script -->
+    <script src="Display.js" type="text/javaScript"></script>
+    <script src="Calculator.js" type="text/javaScript"></script>
+
+
     <!-- CSS file -->
     <link rel="stylesheet" href="./cal_style.css">
+
+
 
     <title>Titi The Cat - Calculator</title>
 
@@ -27,31 +34,32 @@
     <div class="cal_container">
         <div class="calculator">
             <div class="display">
-                <div id="typing_value"></div>
+                <div id="current_value"></div>
                 <div id="final_value"></div>
             </div>
             <button class="col-2 colored1">C</button>
             <button class="colored2">&larr;</button>
-            <button class="colored1">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="colored1">X</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="colored1">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="colored1">+</button>
-            <button class="col-2">0</button>
-            <button class="colored1">.</button>
-            <button class="colored1">=</button>
+            <button class="operator colored1">/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator colored1">X</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator colored1">-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator colored1">+</button>
+            <button class="col-2 number">0</button>
+            <button class="number colored1">.</button>
+            <button class="operator colored1">=</button>
         </div>
     </div>
     <!-- JS Main -->
-    <script src="main.js"></script>
+    <script src="./cal_main.js"></script>
+
 
 
 </body>
