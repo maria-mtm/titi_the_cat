@@ -37,9 +37,6 @@ btns.forEach(btn => {
         }
 
 
-
-
-
         //le pasamos el contenido del btn a la pantalla
         if (display.textContent === "0" || display.textContent === "Titi says sth is wrong") {
             display.textContent = pressedBtn;//si el contenido es 0, se reemplaza por el numero que apretemos despues

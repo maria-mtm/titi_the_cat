@@ -79,7 +79,17 @@
     background-position: top;
     background-attachment: fixed;
     background-size: 150px;
+
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
  
+}
+.buttons_container{
+    background-color: pink;
+    height: 20vh;
+    /* width: 20vw; */
 }
 .cal_container{
     display:flex;
@@ -87,6 +97,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    /* background-color: aquamarine; */
 }
 
 .calculator{
