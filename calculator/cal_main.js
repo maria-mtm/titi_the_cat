@@ -13,3 +13,10 @@ numbersBtn.forEach(btn =>{
         display.addNumbers(btn.innerHTML)
     })
 })
+
+operatorBtn.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+        display.operation(btn.value)
+    })
+
+})
