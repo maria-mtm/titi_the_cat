@@ -45,3 +45,43 @@ btns.forEach(btn => {
         }
     })
 })
+
+
+const magicBtnCoral = document.querySelector(".magicBtn--coral"); //coral red
+const magicBtnBlue = document.querySelector(".magicBtn--blue"); //blue dblue
+const magicBtnGreen = document.querySelector(".magicBtn--green"); //green dgreen
+
+const colored1 = document.querySelectorAll(".colored1");
+const colored2 = document.querySelector(".colored2");
+
+const calculator = document.querySelector(".calculator")
+
+
+magicBtnCoral.onclick = function () {
+    colored1.forEach(element => {
+        element.style.backgroundColor = '#fc9069';
+    })
+    colored2.style.backgroundColor ='#ff502d';
+    
+}
+
+magicBtnBlue.onclick = function () {
+    colored1.forEach(element => {
+        element.style.backgroundColor = '#78bbd2';
+    })
+    colored2.style.backgroundColor ='#457bcc';
+    
+}
+
+magicBtnGreen.onclick = function () {
+    colored1.forEach(element => {
+        element.style.backgroundColor = '#8ac582';
+    })
+    colored2.style.backgroundColor ='#3ba62d';
+    
+}
+
+
+
+
+

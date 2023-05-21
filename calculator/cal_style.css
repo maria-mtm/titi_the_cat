@@ -4,9 +4,13 @@
     --white: #f7f2de;
     --whiteish: #dbd9d2;
     --coral: #fc9069;
-    --blue: rgb(120, 187, 210);
-    --red: rgb(255, 80, 45);
-    --pink: rgb(255, 192, 252);
+    --blue: #78bbd2;
+    --dblue:#457bcc;
+    --whiteishb: #c4bfc5;
+    --red: #ff502d;
+    --pink: #ffc0fc;
+    --green: #8ac582;
+    --dgreen: #3ba62d;
     /* Background Colors */
     --background: #bb88e6;
     --black: rgba(22, 22, 22, 0.719);
@@ -114,55 +118,31 @@ width: 100px;
 margin-top: 5vh
 }
 
-#magicBtn1{
+.magicBtn{
+    
+    width: 30px;
+    height: 30px;
+    border:none;
+    border-radius: 100%;
+    box-shadow:  5px 5px 10px -3px var(--black);
+    cursor:pointer;
+
+}
+
+.magicBtn:active{
+
+    box-shadow: inset 5px 5px 10px -3px var(--black);
+
+}
+
+.magicBtn--coral{
     background-color: var(--coral);
-    width: 30px;
-    height: 30px;
-    border:none;
-    border-radius: 100%;
-    box-shadow:  5px 5px 10px -3px var(--black);
-    cursor:pointer;
-
-
 }
-
-#magicBtn1:active{
-
-    box-shadow: inset 5px 5px 10px -3px var(--black);
-
-}
-
-#magicBtn2{
+.magicBtn--blue{
     background-color: var(--blue);
-    width: 30px;
-    height: 30px;
-    border:none;
-    border-radius: 100%;
-    box-shadow:  5px 5px 10px -3px var(--black);
-    cursor:pointer;
-
 }
-
-#magicBtn2:active{
-
-    box-shadow: inset 5px 5px 10px -3px var(--black);
-
-}
-#magicBtn3{
-    background-color: var(--red);
-    width: 30px;
-    height: 30px;
-    border:none;
-    border-radius: 100%;
-    box-shadow:  5px 5px 10px -3px var(--black);
-    cursor:pointer;
-
-}
-
-#magicBtn3:active{
-
-    box-shadow: inset 5px 5px 10px -3px var(--black);
-
+.magicBtn--green{
+    background-color: var(--green);
 }
 
 
