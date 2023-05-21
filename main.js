@@ -1,3 +1,6 @@
+
+
+
 const menuNav = document.querySelector('#nav')
 const openMenu = document.querySelector('#toOpenBtn')
 const closeMenu = document.querySelector('#toCloseBtn')
