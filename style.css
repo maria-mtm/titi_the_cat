@@ -76,7 +76,7 @@ body {
 
 /* header for alls */
 header{
-    display: sticky;
+    display: fixed;
 }
 .header {
 
